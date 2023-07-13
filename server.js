@@ -4,11 +4,22 @@
  * Module dependencies.
  */
 
-import debug from 'debug';
+import dotenv from 'dotenv';
 import { createServer } from 'http';
-import app from '../app.js';
+import morgan from 'morgan';
+import app from './app.js';
 
-const logger = debug('express-es6:server');
+/**
+ * Load environment variables from .env file.
+ */
+
+dotenv.config();
+
+/**
+ * Setup the logger.
+ */
+
+app.use(morgan('combined'));
 
 /**
  * Get port from environment and store in Express.
@@ -82,5 +93,5 @@ function onError(error) {
 function onListening() {
   const addr = server.address();
   const bind = typeof addr === 'string' ? 'pipe ' + addr : 'port ' + addr.port;
-  logger('Listening on ' + bind);
+  console.log('Listening on ' + bind);
 }

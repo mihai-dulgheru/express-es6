@@ -10,22 +10,8 @@
 
 2. Run the project
 
-   On MacOS or Linux, run the app with this command:
-
    ```bash
-   DEBUG=express-es6:* npm start
-   ```
-
-   On Windows Command Prompt, use this command:
-
-   ```bash
-   set DEBUG=express-es6:* & npm start
-   ```
-
-   On Windows PowerShell, use this command:
-
-   ```bash
-   $env:DEBUG='express-es6:*'; npm start
+   npm start
    ```
 
 ## Steps to convert ES5 to ES6
