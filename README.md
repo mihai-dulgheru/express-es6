@@ -52,14 +52,14 @@
    const __dirname = dirname(__filename);
    ```
 
-4. Replace the `module.exports` with the following:
+4. Replace the `module.exports` with the following
 
    ```javascript
    // module.exports = app;
    export default app;
    ```
 
-5. Replace the `require` with the following:
+5. Replace the `require` with the following
 
    ```javascript
    // const express = require('express');
