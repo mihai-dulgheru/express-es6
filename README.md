@@ -49,7 +49,7 @@
    import { fileURLToPath } from 'url';
 
    const __filename = fileURLToPath(import.meta.url);
-   const__dirname = dirname(__filename);
+   const __dirname = dirname(__filename);
    ```
 
 4. Replace the `module.exports` with the following:
